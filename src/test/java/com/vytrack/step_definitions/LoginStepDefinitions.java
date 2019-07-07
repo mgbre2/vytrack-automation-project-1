@@ -16,7 +16,7 @@ public class LoginStepDefinitions {
     @Then("I login as a sales manager")
     public void i_login_as_a_sales_manager() {
         String username = ConfigurationReader.getProperty("username");
-        String password = ConfigurationReader.getProperty("passssword");
+        String password = ConfigurationReader.getProperty("password");
 
         LoginPage loginPage = new LoginPage();
         loginPage.username.sendKeys(username);
